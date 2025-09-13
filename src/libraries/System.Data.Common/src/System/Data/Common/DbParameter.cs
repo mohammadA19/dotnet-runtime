@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace System.Data.Common
 {
-    public abstract class DbParameter : MarshalByRefObject, IDbDataParameter
+    public abstract class DbParameter : IDbDataParameter
     {
         protected DbParameter() : base() { }
 

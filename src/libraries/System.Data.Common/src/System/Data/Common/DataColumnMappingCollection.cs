@@ -9,7 +9,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace System.Data.Common
 {
-    public sealed class DataColumnMappingCollection : MarshalByRefObject, IColumnMappingCollection
+    public sealed class DataColumnMappingCollection : IColumnMappingCollection
     {
         private List<DataColumnMapping>? _items; // delay creation until AddWithoutEvents, Insert, CopyTo, GetEnumerator
 

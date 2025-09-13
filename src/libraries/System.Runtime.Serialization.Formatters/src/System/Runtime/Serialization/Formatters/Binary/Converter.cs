@@ -60,7 +60,6 @@ namespace System.Runtime.Serialization.Formatters.Binary
         internal static readonly Type s_typeofUInt16Array = typeof(ushort[]);
         internal static readonly Type s_typeofUInt32Array = typeof(uint[]);
         internal static readonly Type s_typeofUInt64Array = typeof(ulong[]);
-        internal static readonly Type s_typeofMarshalByRefObject = typeof(MarshalByRefObject);
 
         private const int PrimitiveTypeEnumLength = 17; //Number of PrimitiveTypeEnums
 

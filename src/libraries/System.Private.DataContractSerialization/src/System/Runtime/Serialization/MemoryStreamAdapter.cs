@@ -5,22 +5,11 @@ using System.IO;
 
 namespace System.Runtime.Serialization
 {
-    // needs to be a separate class so it can get its own namespace
-    [DataContract(Name = nameof(MarshalByRefObject), Namespace = Globals.DataContractXsdBaseNamespace + "System")]
-    internal abstract class MarshalByRefObjectAdapter
-    {
-#pragma warning disable CA1822
-        // never used, but must be first in the hierarchy in order to maintain NetFX compat
-        [DataMember(Name = "__identity", Order = 0)]
-        public object? Identity { get { return null; } set { } }
-#pragma warning restore CA1822
-    }
-
     /// <summary>
     /// Members on this type correspond to the fields in MemoryStream's hierarchy on NetFX.
     /// </summary>
     [DataContract(Name = "MemoryStream", Namespace = Globals.DataContractXsdBaseNamespace + "System.IO")]
-    internal sealed class MemoryStreamAdapter : MarshalByRefObjectAdapter
+    internal sealed class MemoryStreamAdapter
     {
         [DataMember(Name = "_buffer", Order = 1)]
         public byte[]? Buffer { get; set; }

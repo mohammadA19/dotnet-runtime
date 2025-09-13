@@ -15,7 +15,7 @@ namespace System.Diagnostics
     /// <para>Provides the <see langword='abstract '/>base class for the listeners who
     ///    monitor trace and debug output.</para>
     /// </devdoc>
-    public abstract class TraceListener : MarshalByRefObject, IDisposable
+    public abstract class TraceListener : IDisposable
     {
         private int _indentLevel;
         private int _indentSize = 4;

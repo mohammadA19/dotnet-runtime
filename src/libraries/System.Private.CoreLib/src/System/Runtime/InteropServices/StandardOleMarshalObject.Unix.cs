@@ -3,7 +3,7 @@
 
 namespace System.Runtime.InteropServices
 {
-    public class StandardOleMarshalObject : MarshalByRefObject
+    public class StandardOleMarshalObject
     {
         protected StandardOleMarshalObject()
         {

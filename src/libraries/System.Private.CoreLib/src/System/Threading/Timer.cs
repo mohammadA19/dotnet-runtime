@@ -822,7 +822,7 @@ namespace System.Threading
 
     [DebuggerDisplay("{DisplayString,nq}")]
     [DebuggerTypeProxy(typeof(TimerQueueTimer.TimerDebuggerTypeProxy))]
-    public sealed class Timer : MarshalByRefObject, IDisposable, IAsyncDisposable, ITimer
+    public sealed class Timer : IDisposable, IAsyncDisposable, ITimer
     {
         internal const uint MaxSupportedTimeout = 0xfffffffe;
 

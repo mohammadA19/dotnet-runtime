@@ -15,7 +15,7 @@ namespace System.Threading
 #error when compiled with FEATURE_WASM_MANAGED_THREADS
 #endif
     [System.Runtime.Versioning.UnsupportedOSPlatformAttribute("browser")]
-    public sealed class RegisteredWaitHandle : MarshalByRefObject
+    public sealed class RegisteredWaitHandle
     {
         internal RegisteredWaitHandle()
         {

@@ -348,7 +348,7 @@ namespace System.Net
         RequestProhibitedByCachePolicy = 19,
         RequestProhibitedByProxy = 20,
     }
-    public abstract partial class WebRequest : System.MarshalByRefObject, System.Runtime.Serialization.ISerializable
+    public abstract partial class WebRequest : System.Runtime.Serialization.ISerializable
     {
         [System.ObsoleteAttribute("WebRequest, HttpWebRequest, ServicePoint, and WebClient are obsolete. Use HttpClient instead.", DiagnosticId = "SYSLIB0014", UrlFormat = "https://aka.ms/dotnet-warnings/{0}")]
         protected WebRequest() { }
@@ -431,7 +431,7 @@ namespace System.Net
             public const string Put = "PUT";
         }
     }
-    public abstract partial class WebResponse : System.MarshalByRefObject, System.IDisposable, System.Runtime.Serialization.ISerializable
+    public abstract partial class WebResponse : System.IDisposable, System.Runtime.Serialization.ISerializable
     {
         protected WebResponse() { }
         [System.ObsoleteAttribute("Serialization has been deprecated for WebResponse.")]

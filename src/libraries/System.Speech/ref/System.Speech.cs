@@ -482,7 +482,7 @@ namespace System.Speech.Recognition.SrgsGrammar
         public System.Uri XmlBase { get { throw null; } set { } }
         public void WriteSrgs(System.Xml.XmlWriter srgsGrammar) { }
     }
-    public abstract partial class SrgsElement : System.MarshalByRefObject
+    public abstract partial class SrgsElement
     {
         protected SrgsElement() { }
         internal abstract string DebuggerDisplayString();

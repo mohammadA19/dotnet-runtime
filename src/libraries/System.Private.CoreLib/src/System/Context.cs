@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 
 namespace System
 {
-    public abstract class ContextBoundObject : MarshalByRefObject
+    public abstract class ContextBoundObject
     {
         protected ContextBoundObject() { }
     }

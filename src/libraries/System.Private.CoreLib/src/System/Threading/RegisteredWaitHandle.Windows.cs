@@ -10,7 +10,7 @@ using Microsoft.Win32.SafeHandles;
 
 namespace System.Threading
 {
-    public sealed partial class RegisteredWaitHandle : MarshalByRefObject
+    public sealed partial class RegisteredWaitHandle
     {
         private SafeWaitHandle? _waitHandle;
         private readonly _ThreadPoolWaitOrTimerCallback? _callbackHelper;

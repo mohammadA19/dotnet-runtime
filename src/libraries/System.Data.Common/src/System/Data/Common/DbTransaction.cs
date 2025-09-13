@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace System.Data.Common
 {
-    public abstract class DbTransaction : MarshalByRefObject, IDbTransaction, IAsyncDisposable
+    public abstract class DbTransaction : IDbTransaction, IAsyncDisposable
     {
         protected DbTransaction() : base() { }
 

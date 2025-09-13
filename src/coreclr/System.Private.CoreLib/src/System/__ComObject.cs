@@ -22,7 +22,7 @@ namespace System
     /// the basics. This class is used for wrapping COM objects accessed from managed.
     /// </summary>
     [SupportedOSPlatform("windows")]
-    internal class __ComObject : MarshalByRefObject, IDynamicInterfaceCastable
+    internal class __ComObject : IDynamicInterfaceCastable
     {
         private Hashtable? m_ObjectToDataMap; // Do not rename (runtime relies on this name).
 

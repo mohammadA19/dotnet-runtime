@@ -17,7 +17,7 @@ namespace System.Net
 {
     // NOTE: While this class is not explicitly marked as obsolete,
     // it effectively is by virtue of WebRequest.Create being obsolete.
-    public abstract class WebRequest : MarshalByRefObject, ISerializable
+    public abstract class WebRequest : ISerializable
     {
         internal sealed class WebRequestPrefixElement
         {

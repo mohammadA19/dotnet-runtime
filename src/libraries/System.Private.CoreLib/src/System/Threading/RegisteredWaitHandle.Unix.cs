@@ -10,7 +10,7 @@ namespace System.Threading
     /// <summary>
     /// An object representing the registration of a <see cref="WaitHandle"/> via <see cref="ThreadPool.RegisterWaitForSingleObject"/>.
     /// </summary>
-    public sealed partial class RegisteredWaitHandle : MarshalByRefObject
+    public sealed partial class RegisteredWaitHandle
     {
         private SafeWaitHandle? _waitHandle;
         private readonly _ThreadPoolWaitOrTimerCallback? _callbackHelper;

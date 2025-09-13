@@ -8,7 +8,7 @@ using Microsoft.Win32.SafeHandles;
 
 namespace System.Threading
 {
-    public abstract partial class WaitHandle : MarshalByRefObject, IDisposable
+    public abstract partial class WaitHandle : IDisposable
     {
         internal const int MaxWaitHandles = 64;
 

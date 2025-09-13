@@ -469,7 +469,7 @@ namespace System.DirectoryServices
         public System.DirectoryServices.ResultPropertyCollection Properties { get { throw null; } }
         public System.DirectoryServices.DirectoryEntry GetDirectoryEntry() { throw null; }
     }
-    public partial class SearchResultCollection : System.MarshalByRefObject, System.Collections.ICollection, System.Collections.IEnumerable, System.IDisposable
+    public partial class SearchResultCollection : System.Collections.ICollection, System.Collections.IEnumerable, System.IDisposable
     {
         internal SearchResultCollection() { }
         public int Count { get { throw null; } }

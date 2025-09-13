@@ -44,7 +44,7 @@ namespace System.ComponentModel
         public override bool IsDefaultAttribute() { throw null; }
     }
     [System.ComponentModel.DesignerCategoryAttribute("Component")]
-    public partial class Component : System.MarshalByRefObject, System.ComponentModel.IComponent, System.IDisposable
+    public partial class Component : System.ComponentModel.IComponent, System.IDisposable
     {
         public Component() { }
         protected virtual bool CanRaiseEvents { get { throw null; } }

@@ -11,7 +11,7 @@ using System.Reflection;
 namespace System.Data.Common
 {
     [TypeConverter(typeof(DataTableMappingConverter))]
-    public sealed class DataTableMapping : MarshalByRefObject, ITableMapping, ICloneable
+    public sealed class DataTableMapping : ITableMapping, ICloneable
     {
         private DataTableMappingCollection? _parent;
         private DataColumnMappingCollection? _columnMappings;

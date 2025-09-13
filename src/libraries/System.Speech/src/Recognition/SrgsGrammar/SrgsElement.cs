@@ -13,7 +13,7 @@ namespace System.Speech.Recognition.SrgsGrammar
     [Serializable]
     [DebuggerDisplay("SrgsElement Children = [{_items.Count}]")]
     [DebuggerTypeProxy(typeof(SrgsElementDebugDisplay))]
-    public abstract class SrgsElement : MarshalByRefObject, IElement
+    public abstract class SrgsElement : IElement
     {
         protected SrgsElement()
         {

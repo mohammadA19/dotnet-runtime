@@ -14,7 +14,7 @@ namespace System.Threading
     //
     // Windows-specific implementation of ThreadPool
     //
-    public sealed partial class RegisteredWaitHandle : MarshalByRefObject
+    public sealed partial class RegisteredWaitHandle
     {
         private readonly Lock? _lock;
         private bool _unregistering;

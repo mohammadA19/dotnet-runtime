@@ -1045,7 +1045,7 @@
 [assembly: System.Runtime.CompilerServices.TypeForwardedTo(typeof(System.LoaderOptimization))]
 [assembly: System.Runtime.CompilerServices.TypeForwardedTo(typeof(System.LoaderOptimizationAttribute))]
 [assembly: System.Runtime.CompilerServices.TypeForwardedTo(typeof(System.LocalDataStoreSlot))]
-[assembly: System.Runtime.CompilerServices.TypeForwardedTo(typeof(System.MarshalByRefObject))]
+// [assembly: System.Runtime.CompilerServices.TypeForwardedTo(typeof(System.MarshalByRefObject))]
 [assembly: System.Runtime.CompilerServices.TypeForwardedTo(typeof(System.Math))]
 [assembly: System.Runtime.CompilerServices.TypeForwardedTo(typeof(System.MathF))]
 [assembly: System.Runtime.CompilerServices.TypeForwardedTo(typeof(System.MemberAccessException))]

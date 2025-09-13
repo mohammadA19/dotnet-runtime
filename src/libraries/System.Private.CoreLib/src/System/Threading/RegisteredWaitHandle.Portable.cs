@@ -13,7 +13,7 @@ namespace System.Threading
 #if !FEATURE_WASM_MANAGED_THREADS
     [UnsupportedOSPlatform("browser")]
 #endif
-    public sealed partial class RegisteredWaitHandle : MarshalByRefObject
+    public sealed partial class RegisteredWaitHandle
     {
         private static AutoResetEvent? s_cachedEvent;
         private static readonly LowLevelLock s_callbackLock = new LowLevelLock();

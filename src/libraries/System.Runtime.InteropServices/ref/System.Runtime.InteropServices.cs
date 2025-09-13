@@ -932,7 +932,7 @@ namespace System.Runtime.InteropServices
     }
     public partial interface ICustomFactory
     {
-        System.MarshalByRefObject CreateInstance(System.Type serverType);
+        object CreateInstance(System.Type serverType);
     }
     public partial interface ICustomMarshaler
     {
@@ -1655,7 +1655,7 @@ namespace System.Runtime.InteropServices
         public SEHException(string? message, System.Exception? inner) { }
         public virtual bool CanResume() { throw null; }
     }
-    public partial class StandardOleMarshalObject : System.MarshalByRefObject
+    public partial class StandardOleMarshalObject
     {
         protected StandardOleMarshalObject() { }
     }

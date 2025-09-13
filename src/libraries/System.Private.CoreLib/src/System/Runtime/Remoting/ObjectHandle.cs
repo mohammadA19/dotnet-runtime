@@ -3,7 +3,7 @@
 
 namespace System.Runtime.Remoting
 {
-    public class ObjectHandle : MarshalByRefObject
+    public class ObjectHandle
     {
         private readonly object? _wrappedObject;
 

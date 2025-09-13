@@ -222,7 +222,7 @@ namespace System.Diagnostics
         Info = 3,
         Verbose = 4,
     }
-    public abstract partial class TraceListener : System.MarshalByRefObject, System.IDisposable
+    public abstract partial class TraceListener : System.IDisposable
     {
         protected TraceListener() { }
         protected TraceListener(string? name) { }

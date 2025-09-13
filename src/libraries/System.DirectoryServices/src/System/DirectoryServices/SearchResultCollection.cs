@@ -13,7 +13,7 @@ namespace System.DirectoryServices
     /// Contains the instances of <see cref='System.DirectoryServices.SearchResult'/> returned during a
     /// query to the Active Directory hierarchy through <see cref='System.DirectoryServices.DirectorySearcher'/>.
     /// </devdoc>
-    public class SearchResultCollection : MarshalByRefObject, ICollection, IEnumerable, IDisposable
+    public class SearchResultCollection : ICollection, IEnumerable, IDisposable
     {
         private IntPtr _handle;
         private UnsafeNativeMethods.IDirectorySearch? _searchObject;

@@ -8,7 +8,7 @@ namespace System.ComponentModel
     /// interface and enables object-sharing between applications.
     /// </summary>
     [DesignerCategory("Component")]
-    public class Component : MarshalByRefObject, IComponent
+    public class Component : IComponent
     {
         /// <summary>
         /// Static hash key for the Disposed event. This field is read-only.

@@ -14,7 +14,7 @@ using System.Text;
 
 namespace System.Speech.Internal.SrgsCompiler
 {
-    internal class AppDomainGrammarProxy : MarshalByRefObject
+    internal class AppDomainGrammarProxy
     {
         internal SrgsRule[] OnInit(string method, object[] parameters, string onInitParameters, out Exception exceptionThrown)
         {

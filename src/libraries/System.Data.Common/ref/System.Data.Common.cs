@@ -1911,7 +1911,7 @@ namespace System.Data.Common
         [System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute("IDataReader's (built from adapter commands) schema table types cannot be statically analyzed.")]
         public virtual int Update(System.Data.DataSet dataSet) { throw null; }
     }
-    public sealed partial class DataColumnMapping : System.MarshalByRefObject, System.Data.IColumnMapping, System.ICloneable
+    public sealed partial class DataColumnMapping : System.Data.IColumnMapping, System.ICloneable
     {
         public DataColumnMapping() { }
         public DataColumnMapping(string? sourceColumn, string? dataSetColumn) { }
@@ -1928,7 +1928,7 @@ namespace System.Data.Common
         object System.ICloneable.Clone() { throw null; }
         public override string ToString() { throw null; }
     }
-    public sealed partial class DataColumnMappingCollection : System.MarshalByRefObject, System.Collections.ICollection, System.Collections.IEnumerable, System.Collections.IList, System.Data.IColumnMappingCollection
+    public sealed partial class DataColumnMappingCollection : System.Collections.ICollection, System.Collections.IEnumerable, System.Collections.IList, System.Data.IColumnMappingCollection
     {
         public DataColumnMappingCollection() { }
         [System.ComponentModel.BrowsableAttribute(false)]
@@ -1973,7 +1973,7 @@ namespace System.Data.Common
         System.Data.IColumnMapping System.Data.IColumnMappingCollection.Add(string? sourceColumnName, string? dataSetColumnName) { throw null; }
         System.Data.IColumnMapping System.Data.IColumnMappingCollection.GetByDataSetColumn(string dataSetColumnName) { throw null; }
     }
-    public sealed partial class DataTableMapping : System.MarshalByRefObject, System.Data.ITableMapping, System.ICloneable
+    public sealed partial class DataTableMapping : System.Data.ITableMapping, System.ICloneable
     {
         public DataTableMapping() { }
         public DataTableMapping(string? sourceTable, string? dataSetTable) { }
@@ -1998,7 +1998,7 @@ namespace System.Data.Common
     }
     [System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.Data.Design.DataTableMappingCollectionEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [System.ComponentModel.ListBindableAttribute(false)]
-    public sealed partial class DataTableMappingCollection : System.MarshalByRefObject, System.Collections.ICollection, System.Collections.IEnumerable, System.Collections.IList, System.Data.ITableMappingCollection
+    public sealed partial class DataTableMappingCollection : System.Collections.ICollection, System.Collections.IEnumerable, System.Collections.IList, System.Data.ITableMappingCollection
     {
         public DataTableMappingCollection() { }
         [System.ComponentModel.BrowsableAttribute(false)]
@@ -2410,7 +2410,7 @@ namespace System.Data.Common
         [System.Diagnostics.CodeAnalysis.RequiresUnreferencedCodeAttribute("IDataReader's (built from adapter commands) schema table types cannot be statically analyzed.")]
         public int Update(System.Data.DataTable dataTable) { throw null; }
     }
-    public abstract partial class DbDataReader : System.MarshalByRefObject, System.Collections.IEnumerable, System.Data.IDataReader, System.Data.IDataRecord, System.IDisposable, System.IAsyncDisposable
+    public abstract partial class DbDataReader : System.Collections.IEnumerable, System.Data.IDataReader, System.Data.IDataRecord, System.IDisposable, System.IAsyncDisposable
     {
         protected DbDataReader() { }
         public abstract int Depth { get; }
@@ -2636,7 +2636,7 @@ namespace System.Data.Common
         public static readonly string SupportedJoinOperators;
         public static readonly string TypeName;
     }
-    public abstract partial class DbParameter : System.MarshalByRefObject, System.Data.IDataParameter, System.Data.IDbDataParameter
+    public abstract partial class DbParameter : System.Data.IDataParameter, System.Data.IDbDataParameter
     {
         protected DbParameter() { }
         [System.ComponentModel.BrowsableAttribute(false)]
@@ -2673,7 +2673,7 @@ namespace System.Data.Common
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public abstract void ResetDbType();
     }
-    public abstract partial class DbParameterCollection : System.MarshalByRefObject, System.Collections.ICollection, System.Collections.IEnumerable, System.Collections.IList, System.Data.IDataParameterCollection
+    public abstract partial class DbParameterCollection : System.Collections.ICollection, System.Collections.IEnumerable, System.Collections.IList, System.Data.IDataParameterCollection
     {
         protected DbParameterCollection() { }
         [System.ComponentModel.BrowsableAttribute(false)]
@@ -2763,7 +2763,7 @@ namespace System.Data.Common
         public DbProviderSpecificTypePropertyAttribute(bool isProviderSpecificTypeProperty) { }
         public bool IsProviderSpecificTypeProperty { get { throw null; } }
     }
-    public abstract partial class DbTransaction : System.MarshalByRefObject, System.Data.IDbTransaction, System.IDisposable, System.IAsyncDisposable
+    public abstract partial class DbTransaction : System.Data.IDbTransaction, System.IDisposable, System.IAsyncDisposable
     {
         protected DbTransaction() { }
         public System.Data.Common.DbConnection? Connection { get { throw null; } }

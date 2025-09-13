@@ -27,7 +27,7 @@ namespace Microsoft.Win32
         PerformanceData = -2147483644,
         CurrentConfig = -2147483643,
     }
-    public sealed partial class RegistryKey : System.MarshalByRefObject, System.IDisposable
+    public sealed partial class RegistryKey : System.IDisposable
     {
         internal RegistryKey() { }
         public Microsoft.Win32.SafeHandles.SafeRegistryHandle Handle { get { throw null; } }

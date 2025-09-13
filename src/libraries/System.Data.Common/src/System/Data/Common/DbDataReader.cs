@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace System.Data.Common
 {
-    public abstract class DbDataReader : MarshalByRefObject, IDataReader, IEnumerable, IAsyncDisposable
+    public abstract class DbDataReader : IDataReader, IEnumerable, IAsyncDisposable
     {
         protected DbDataReader() : base() { }
 
